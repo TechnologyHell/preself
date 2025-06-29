@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Perself MindCare
+    </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border" style="width: 3rem; height: 3rem; color: orange;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div> 
+    <!-- Spinner End -->
+
+    <!-- Popup Modal
+    <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+            <button class="popup-close-top-right" onclick="closePopup()">×</button>
+            <h2 class="content-title">Welcome to Perself Mindcare</h2>
+            <p>
+                <br>
+                🌿 Mental wellness starts from within.<br>
+                💬 Get therapy, support & healing.<br>
+                ✨ Take the first step toward a better you.<br><br>
+            </p>
+            <a class="popup-know-more" href="pages/connect.html" >Connect Now</a>
+
+        </div>
+    </div>
+     
+    Popup Modal End -->
+
+    <!-- whatsap -->
+    <a href="https://wa.me/919832739564" target="_blank" class="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat" class="whatsapp-logo">
+    </a>
+    <!-- whatsapp end-->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <!-- Logo (left) -->
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img src="img/logo_banner.png" class="logo" alt="Logo">
+        </a>
+
+        <!-- Toggler for mobile -->
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar content -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            
+            <!-- Centered nav links using flex-grow-1 -->
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="pages/about.html" class="nav-item nav-link">About Us</a>
+                <a href="pages/therapy.html" class="nav-item nav-link">Therapy</a>
+                <a href="pages/assessment.html" class="nav-item nav-link">Assessment</a>
+                <a href="pages/gallery.html" class="nav-item nav-link">Gallery</a>
+            </div>
+
+            <!-- Connect button (right on desktop) -->
+            <a href="/pages/connect.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block reg-bt1">
+                Connect Now <i class="fa fa-arrow-right ms-3"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+    <!-- Carousel Start
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+          <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                  <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center "style="background: rgba(24, 29, 56, .6);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-uppercase mb-3 animated slideInDown minor-head">Welcome to</h5>
+                                <h1 class="display-3 text-white animated slideInDown major-head">Siliguri Institute of Technology</h1>
+                                <p class=" mb-4 pb-2 body-head ">A premier institution committed to fostering academic excellence and technological innovation, shaping the leaders of tomorrow since 1999.</p>
+                                <a href="pages/about.html" class="btn btn-light-orange py-md-3 px-md-5 animated slideInRight">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                  <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-uppercase mb-3 animated slideInDown minor-head">Presenting to You</h5>
+                                <h1 class="display-3 text-white animated slideInDown major-head">SIT Ideathon</h1>
+                                <p class=" mb-4 pb-2 body-head ">An extraordinary platform where creativity meets technology, enabling young innovators to challenge norms and design solutions for a brighter future.</p>
+                                <a href="pages/events.html" class="btn btn-light-orange py-md-3 px-md-5 animated slideInRightt">Read More</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-3.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-uppercase mb-3 animated slideInDown minor-head">A Glimpse at Origins</h5>
+                                <h1 class="display-3 text-white animated slideInDown major-head">A Legacy of Excellence & Innovation</h1>
+                                <p class=" mb-4 pb-2 body-head ">Two successful editions of Ideathon, featuring innovative ideas and impactful solutions. Join us as we continue empowering innovation.</p>
+                                <a href="pages/events.html" class="btn btn-light-orange py-md-3 px-md-5 animated slideInRight">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-4.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-uppercase mb-3 animated slideInDown minor-head">Presenting</h5>
+                                <h1 class="display-3 text-white animated slideInDown major-head">SIT Ideathon 3.0 2k25</h1>
+                                <p class=" mb-4 pb-2 body-head ">This edition promises to redefine innovation with tougher challenges, brighter ideas, and unparalleled opportunities for every creative mind.</p>
+                                <a href="pages/events.html" class="btn btn-light-orange py-md-3 px-md-5 animated slideInRight">Read More</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-5.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-uppercase mb-3 animated slideInDown minor-head">Prizes and Achievements</h5>
+                                <h1 class="display-3 text-white animated slideInDown major-head">Winner Prize Money Worth ₹10,000!</h1>
+                                <p class=" mb-4 pb-2 body-head ">Showcase your ideas, compete with the best, and win cash prizes. Your journey to innovation could be the key to your success!</p>
+                                <a href="pages/events.html" class="btn btn-light-orange py-md-3 px-md-5 animated slideInRight">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-6.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-uppercase mb-3 animated slideInDown minor-head">Perks for Competitors</h5>
+                                <h1 class="display-3 text-white animated slideInDown major-head">Exclusive Support for Top 3 Teams</h1>
+                                <p class=" mb-4 pb-2 body-head ">The SIT Incubation Cell offers mentorship, guidance, and resources to the top 3 teams to transform their groundbreaking ideas into actionable solutions.</p>
+                                <a href="pages/events.html" class="btn btn-light-orange py-md-3 px-md-5 animated slideInRight">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    Carousel End -->
+
+
+    <!-- Hero Stats Start-->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+            <div class="w-full sm:p-4 px-4 mb-6">
+                <h1 class="mb-2 text-gray-900 titillium-web-bold">Empower Your Team with Better Mental Health</h1>
+                <div class="leading-relaxed titillium-web-regular">Support your employees with our tailored Employee Assistance Programmes (EAP) — built to meet the unique needs of your organization.</div>
+            </div>
+            <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+                <h2 class="title-font font-medium text-3xl text-gray-900">2.7K</h2>
+                <p class="leading-relaxed">Users</p>
+            </div>
+            <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+                <h2 class="title-font font-medium text-3xl text-gray-900">1.8K</h2>
+                <p class="leading-relaxed">Subscribes</p>
+            </div>
+            <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+                <h2 class="title-font font-medium text-3xl text-gray-900">35</h2>
+                <p class="leading-relaxed">Downloads</p>
+            </div>
+            <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+                <h2 class="title-font font-medium text-3xl text-gray-900">4</h2>
+                <p class="leading-relaxed">Products</p>
+            </div>
+            </div>
+            <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0">
+            <img class="object-cover object-center w-full h-full" src="https://dummyimage.com/600x300" alt="stats">
+            </div>
+        </div>
+    </section>
+    <!-- Hero Stats End-->
+
+
+    
+    <!-- About SIT Start
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100 img-left" src="img/s1.jpg" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3 minor-title ">Welcome to</h6>
+                    <h1 class="mb4 subheadings content-title">Siliguri Institute of Technology</h1>
+                    <h5 class=" bg-white    naac">Accredited by NAAC</h5><br>
+                    <p class="mb-4 content-body">Established in 1999, Siliguri Institute of Technology (SIT) is an IT based institution running under the vision of Techno India Group and is only one of its kind in North Bengal.</b></p>
+                    <div class="row gy-2 gx-4 mb-4 content-bullets">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-orange me-2"></i>Strong Industry Focus</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-orange me-2"></i>SIT Incubation Centre</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-orange me-2"></i>Modern Infrastructure</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-orange me-2"></i>Diverse Academy Programs</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-orange me-2"></i>Mentorship</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-orange me-2"></i>Projects & Internships</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-light-orange  py-3 px-5 mt-2 reg-bt1" href="pages/about.html">Know More</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    About End -->
+
+    <!--About ideathon start-->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- Left Side: Text -->
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3 minor-title">Presenting to You</h6>
+                    <h1 class="mb-4 content-title">SIT Ideathon 3.0</h1>
+                    <p class="mb-4 content-body">
+                        SIT Ideathon aims to provide a platform for students to showcase their creativity, critical thinking, and collaborative skills.Through this platform, students can make their dreams come true by pursuing their entrepreneurial dreams in their future life. The competition is divided into two parts, one for school students of Class - XI to XII and the other for UG and PG students.
+                    </p>
+                    <div class="row gy-2 gx-4 mb-4 content-bullets">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-orange me-2"></i>Foster Innovation</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-orange me-2"></i>Skill Development</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-orange me-2"></i>Networking Opportunity</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-orange me-2"></i>Prize Money</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-orange me-2"></i>Mentorship Opportunity</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-orange me-2"></i>Practical Projects</p>
+                        </div>
+                    </div>
+                    <a class="btn py-3 px-5 mt-2 reg-bt1  btn-light-orange " href="pages/events.html">Know More</a>
+                </div>
+                <!-- Right Side: Image -->
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="position-relative" style="min-height: 400px;">
+                        <img class="img-fluid w-100 h-100" src="img/s2.png" alt="Siliguri Institute of Technology" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--About ideathon end-->    
+
+    <!-- Ideathon list Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3 minor-title">Ideathon 3.0 2K25</h6>
+                <h1 class="mb-5 content-title">Highlights</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/high3.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                            </div>
+                        </div>
+                       </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s" >
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden " >
+                            <img class="img-fluid"  src="img/high1.jpg" alt="" >
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/high2.jpg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ideathon List End -->
+
+
+    <!--FAQ start-->
+
+    <div class="container-xxl py-5" id="faq">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3 minor-title">FAQs</h6>
+                <h1 class="mb-5 content-title">Frequently Asked Questions</h1>
+            </div>
+      
+            <!-- FAQ Section -->
+            <div class="faq-container wow fadeInUp" data-wow-delay="0.2s">
+                <!-- Question 1 -->
+                <div class="faq-item  wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="faq-question">
+                        <span>What is SIT Ideathon about?</span>
+                        <button class="faq-toggle">+</button>
+                    </div>
+                    <div class="faq-answer content-body">
+                        <p>SIT Ideathon 3.0 provides a platform for students to showcase their creativity and critical thinking by solving real-world challenges and competing with peers from nearby institutions.</p>
+                    </div>
+                </div>
+            
+                <!-- Question 2 -->
+                <div class="faq-item wow fadeInUp"  data-wow-delay="0.3s">
+                    <div class="faq-question">
+                        <span>Who can participate in the event?</span>
+                        <button class="faq-toggle">+</button>
+                    </div>
+                    <div class="faq-answer content-body">
+                        <p>The event is open to school students from Class XI to XII and UG/PG students from various backgrounds interested in innovation and problem-solving.</p>
+                    </div>
+                </div>
+      
+                <!-- Question 3 --> 
+                <div class="faq-item wow fadeInUp"  data-wow-delay="0.3s">
+                    <div class="faq-question ">
+                        <span>Is there any registration fee?</span>
+                        <button class="faq-toggle">+</button>
+                    </div>
+                    <div class="faq-answer content-body">
+                        <p>No, participation is completely free for all interested students and institutions. However if your idea is selected for presentation, there is a charge of Rs. 500 per team.</p>
+                    </div>
+                </div>
+      
+                <!-- Question 4 -->
+                <div class="faq-item wow fadeInUp"  data-wow-delay="0.3s">
+                    <div class="faq-question">
+                        <span>When does the event take place?</span>
+                        <button class="faq-toggle">+</button>
+                    </div>
+                    <div class="faq-answer content-body">
+                        <p>The event will be held on 7th February 2025, at the J.C Bose Seminar Hall, SIT Campus, Sukna, Siliguri.</p>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="faq-item wow fadeInUp"  data-wow-delay="0.3s">
+                        <div class="faq-question">
+                            <span>What is the procedure to register?</span>
+                            <button class="faq-toggle">+</button>
+                        </div>
+                        <div class="faq-answer content-body">
+                            <p>Click the Register button, complete the Google Form with the required details, and submit your idea presentation. If selected, our representative will contact you directly.</p>
+                        </div>
+                </div>
+          </div>
+        </div>
+      </div>
+
+    <!--FAQ end-->     
+
+    
+    
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="mb-3 topic">Quick Link</h4>
+                    <a class="btn btn-link" href="pages/about.html">About Us</a>
+                    <a class="btn btn-link" href="pages/contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="pages/events.html">Ideathon 2K25</a>
+                    <a class="btn btn-link" href="pages/register.html">Registration</a>
+                    <a class="btn btn-link" href="index.html#faq">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="mb-3 topic">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>SIT Campus, Sukna, Salbari</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:8927251241">+91 89272 51241</a></p>
+                    <a href="mailto:sitideathonofficial@gmail.com" target="_blank" class="mb-2"><i class="fa fa-envelope me-3"></i>sitideathonofficial@gmail.com</a>
+                    <div class="d-flex pt-2">
+                        <a href="https://www.instagram.com/sitsiliguri" target="_blank" class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/sittechno" target="_blank" class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/@sittechnosiliguri" target="_blank" class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/school/sitsiliguri/posts/?feedView=all" target="_blank" class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="mb-3 topic">Gallery</h4>
+                    <a href="pages/gallery.html" class="row g-2 pt-2">
+                        <div class="col-4" >
+                            <img class="img-fluid bg-light p-1" src="img/gal1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/gal2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/gal3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/gal4.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/gal5.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/gal7.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="mb-3 topic">Newsletter</h4>
+                    <p>Join our newsletter for the latest updates!</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-light-orange py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class=" text-center ">
+                        &copy; <a class="border-bottom" href="#">SIT Ideathon
+                        </a>,  All Right Reserved.
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer End -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
