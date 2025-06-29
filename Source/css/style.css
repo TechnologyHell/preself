@@ -3,7 +3,7 @@
     max-width: 1200px; 
   }
 :root {
-    --primary: #18beff;
+    --primary: rgb(255, 145, 0);
     --light: #1cc4a4;
     --dark: #1982C4;
 }
@@ -39,9 +39,14 @@
 
 
 
+.text-big {
+    font-size: 40px;
+}
 
+.text-red {
 
-
+    color: rgb(255, 145, 0);
+}
 
 
 .titillium-web-extralight {
@@ -387,7 +392,7 @@ ol {
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Titillium Web", sans-serif;
     font-weight: 900;
     vertical-align: middle;
     margin-left: 8px;
